@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Автосервис "Форсаж-Авто"</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="build/style.css" media="none" onload="if(media!=='all')media='all'">
+    <noscript>
+        <link rel="stylesheet" href="build/style.css">
+    </noscript>
+</head>
+<body>
+<header>
+    <a class="link-img" href="/"><img src="img/logo.png" alt="logo"></a>
+    <div class="header__wrapper">
+        <nav>
+            <ul class="menu layout">
+                <li class="menu__list wow animate__animated animate__fadeInRightBig">
+                    <a class="menu__link" id="main" href="index.html">Главная</a>
+                </li>
+                <li class="menu__list wow animate__animated animate__fadeInRightBig" data-wow-delay=".2s">
+                    <a class="menu__link" id="vacancies" href="#">Вакансии</a>
+                </li>
+                <li class="menu__list wow animate__animated animate__fadeInRightBig" data-wow-delay=".4s">
+                    <a class="menu__link" id="contacts" href="#">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="burger-menu">
+            <div class="burger-1"></div>
+            <div class="burger-2"></div>
+            <div class="burger-3"></div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="article layout">
+        <h1 class="article-title">Вакансии</h1>
+        <ul class="article-list-circle">
+            <li>Автослесари</li>
+            <p class="article-text">Зарплата: % от выручки. Зависит от Вашей квалификации, обсуждается индивидуально</p>
+            <p class="article-text">График работы:</p>
+            <p class="article-text">Пн-Пт: 9:00-19:00</p>
+            <p class="article-text">Сб: 10:00-17:00</p>
+            <br>
+            <li>Автомойщики</li>
+            <p class="article-text">Зарплата: 40% от выручки</p>
+            <p class="article-text">График работы:</p>
+            <p class="article-text">Пн-Пт: 9:00-19:00</p>
+            <p class="article-text">Сб: 10:00-17:00</p>
+            <p class="article-text">Также можем рассмотреть аренду мойки по договору.</p>
+        </ul>
+    </div>
+</main>
+<footer>
+    <section class="map">
+        <iframe class="desktop"
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3Afb5e315c65445e2048bec23efff9c595f2091a53501389c68549f6bd430f1c06&amp;source=constructor"
+                width="100%" height="670" frameborder="0"></iframe>
+        <iframe class="mobile"
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3Afb5e315c65445e2048bec23efff9c595f2091a53501389c68549f6bd430f1c06&amp;source=constructor"
+                width="100%" height="300" frameborder="0"></iframe>
+        <div class="map__location">
+            <p class="map__location-title">Адрес автосервиса &laquo;Форсаж-Авто&raquo;</p>
+            <p class="map__location-address">
+                РБ, г.Туймазы
+                <span>ул. 70 лет Октября, д. 20К</span>
+                <span style="text-align: left">Время работы:</span>
+                <span style="text-align: right">пн-пт: 09:00 - 19:00</span>
+                <span style="text-align: right">сб: 10:00 - 17:00</span>
+            </p>
+            <a href="tel:+79279276970" class="map__location-phone">+7 (927) 927-69-70</a>
+            <div class="contacts-wrapper">
+                <div class="contacts-wrapper__item wow animate__animated animate__fadeInRightBig"><a
+                        href="https://vk.com/public199284486"><img src="img/ico-VK.svg" alt=""></a></div>
+                <div class="contacts-wrapper__item wow animate__animated animate__fadeInRightBig" data-wow-delay=".2s">
+                    <a href="https://api.whatsapp.com/send?phone=79279276970"><img src="img/ico-WhatsUp.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+<script src="build/index.js"></script>
+</body>
+</html>

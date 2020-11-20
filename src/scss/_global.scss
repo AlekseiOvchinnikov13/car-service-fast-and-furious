@@ -1,0 +1,107 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body, html {
+  position: relative;
+  background-color: #fff;
+  scroll-behavior: smooth;
+  overflow-x: unset;
+  height: unset;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  min-height: 100vh;
+  min-width: $min-width;
+  color: $grey-color;
+  overflow-x: hidden;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 100%;
+}
+
+ul, li {
+  padding-inline-start: 0;
+  list-style-type: none;
+}
+
+a {
+  color: $grey-color;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.layout {
+  width: $gridXL;
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+@media(min-width: 320px) {
+  .layout {
+    width: $gridXS;
+  }
+}
+
+@media(min-width: 640px) {
+  .layout {
+    width: $gridSM;
+  }
+}
+
+@media(min-width: 768px) {
+  .layout {
+    width: $gridMD;
+  }
+}
+
+@media(min-width: 1024px) {
+  .layout {
+    width: $gridLG;
+  }
+}
+
+@media(min-width: 1440px) {
+  .layout {
+    width: $gridXL;
+    max-width: $max-width;
+  }
+}
+
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: block;
+}
+
+.subtitle {
+  font-size: 32px;
+  line-height: 100%;
+  text-align: center;
+  margin: 35px 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+@keyframes flyUp {
+  50%{
+    transform: translateY(150px);
+  }
+}
+
+@keyframes flyDown {
+  50%{
+    transform: translateY(-150px);
+  }
+}
