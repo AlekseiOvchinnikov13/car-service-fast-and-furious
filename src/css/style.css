@@ -594,7 +594,7 @@ a {
     display: none; }
   nav {
     position: fixed;
-    top: -75px;
+    top: 0;
     left: 100%;
     transform: translateX(0);
     transition: all .3s;
