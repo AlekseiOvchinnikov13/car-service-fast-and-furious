@@ -39,7 +39,7 @@ function styles() {
         cssDir
     ])
         .pipe(autoprefixer({
-            overrideBrowserslist: ['last 8 versions']
+            overrideBrowserslist: ['last 16 versions']
         }))
         .pipe(cleanCSS({
             level: 2

@@ -1,4 +1,4 @@
-window.onload = function () {
+$(document).ready(function (){
     new WOW({
         animateClass: 'animate__animated'
     }).init();
@@ -6,8 +6,8 @@ window.onload = function () {
     document.querySelector('.burger-menu').addEventListener('click', e => {
         e.preventDefault();
         switchOpenedMenu();
-    })
-};
+    });
+});
 
 $(function () {
     $('#reviews').on('click', function() {

@@ -107,6 +107,9 @@
   .interesting__wrapper-item img {
     width: 50%;
   }
+  .about .services-wrapper__item {
+    min-height: 560px;
+  }
 }
 
 @media (max-width: 850px) {
@@ -116,9 +119,10 @@
   }
   .about .services-wrapper__item {
     flex-basis: 100%;
+    min-height: 410px;
   }
   .about .services-wrapper__title {
-    margin: 0px 0 15px;
+    margin: 15px 0;
   }
   .about .services-wrapper__text {
     margin-bottom: 10px;
@@ -154,9 +158,10 @@
     display: none;
   }
   nav {
-    position: absolute;
+    position: fixed;
     top: -75px;
     left: 100%;
+    transform: translateX(0);
     transition: all .3s;
     z-index: 10;
     height: 110vh;
@@ -200,7 +205,7 @@
 
   .opened {
     nav {
-      left: 0;
+      transform: translateX(-100%);
     }
 
     .burger-menu {
